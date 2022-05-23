@@ -168,6 +168,7 @@ def load_and_align_data(image_paths, image_size, margin, gpu_memory_fraction):
         prewhitened = facenet.prewhiten(aligned)
         img_list[i] = prewhitened
         imageio.imsave(os.path.join(faces_detected_dir,os.path.basename(image_paths[i])),img_list[i])
+        print(f"{image_paths[i]} is saved!")
     images = np.stack(img_list)
 
     # save this somewhere?
