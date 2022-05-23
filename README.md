@@ -1,3 +1,4 @@
+# Credit DavidSandberg (repo owner) and RuiJue (pretrained models)
 # Face Recognition using Tensorflow [![Build Status][travis-image]][travis]
 
 [travis-image]: http://travis-ci.org/davidsandberg/facenet.svg?branch=master
