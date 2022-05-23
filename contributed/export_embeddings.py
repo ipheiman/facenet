@@ -139,7 +139,11 @@ def load_and_align_data(image_paths, image_size, margin, gpu_memory_fraction):
     minsize = 20 # minimum size of face
     threshold = [ 0.6, 0.7, 0.7 ]  # three steps's threshold
     factor = 0.709 # scale factor
+
+    # if output dir dont exist, create it!
     faces_detected_dir = "../data/images_faces_detected"
+    if not os.path.exists(faces_detected_dir):
+        os.mkdir(faces_detected_dir)
     print('Creating networks and loading parameters')
     with tf.Graph().as_default():
         gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_memory_fraction)
