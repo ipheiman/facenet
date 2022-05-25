@@ -7,7 +7,7 @@
 ## Instructions:
 1. conda create -n facenet_rj python=3.7 -y
 2. conda activate facenet_rj
-3. cd facenet
+3. cd facenet/
 4. pip install -r HM_requirements
 5. Run "export PYTHONPATH=$PYTHONPATH:<local path for facenet-master/src>"
 6. Download pretrained models from the gdrive
