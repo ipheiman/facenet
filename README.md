@@ -7,13 +7,14 @@
 ## Instructions:
 1. conda create -n facenet_rj python=3.7 -y
 2. conda activate facenet_rj
-3. pip install -r HM_requirements
-4. Run "export PYTHONPATH=$PYTHONPATH:<local path for facenet-master/src>"
-5. Download pretrained models from the gdrive
-6. cd contributed/
-7. Run "python export_embeddings.py --model_dir <path for rj_models/20170512-110547> --data_dir ../data/images --is_aligned False"
+3. cd facenet
+4. pip install -r HM_requirements
+5. Run "export PYTHONPATH=$PYTHONPATH:<local path for facenet-master/src>"
+6. Download pretrained models from the gdrive
+7. cd contributed/
+8. Run "python export_embeddings.py --model_dir <path for rj_models/20170512-110547> --data_dir ../data/images --is_aligned False"
   - --is_aligned depends on whether your images are aligned and face-extracted.
-8. Output:
+9. Output:
   - /contributed folder: label_strings.npy, labels.npy, embeddings.npy (128-dim because facenet). 
   - /data/images_faces_detected: faces detected for each image
 
